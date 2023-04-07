@@ -31,7 +31,7 @@ class HomeFragment : Fragment() {
         val webView: WebView = binding.webview
         webView.settings.javaScriptEnabled = true;
         webView.clearCache(true)
-        webView.loadUrl("https://www.google.com")
+        webView.loadUrl("https://www.google.com") 
 
         webView.webViewClient = object : WebViewClient(){
             override fun shouldOverrideUrlLoading(

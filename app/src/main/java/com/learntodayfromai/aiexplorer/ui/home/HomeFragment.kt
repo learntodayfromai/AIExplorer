@@ -25,13 +25,14 @@ class HomeFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
+        // how does fragment talk with main activity here?
         _binding = FragmentHomeBinding.inflate(inflater, container, false)
         val root: View = binding.root
 
         val webView: WebView = binding.webview
         webView.settings.javaScriptEnabled = true;
         webView.clearCache(true)
-        webView.loadUrl("https://www.google.com") 
+        webView.loadUrl("https://www.google.com")
 
         webView.webViewClient = object : WebViewClient(){
             override fun shouldOverrideUrlLoading(
